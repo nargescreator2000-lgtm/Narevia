@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101426">
+  <meta name="description" content="نارویا؛ خانه‌ای برای نویسندگان و دوستداران رمان.">
+  <title>نارویا | دنیای داستان‌ها</title>
+
+  <style>
+    :root {
+      --bg: #101426;
+      --panel: #191f35;
+      --gold: #d8b568;
+      --text: #f5f1e8;
+      --muted: #b8bdce;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid #30354b;
+      background: #101426;
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+
+    .logo {
+      color: var(--gold);
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      padding: 85px 0;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top, #292b49, transparent 70%);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 54px);
+      line-height: 1.5;
+      margin: 12px 0;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 9px;
+      border: 1px solid var(--gold);
+      background: var(--gold);
+      color: #17182a;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--gold);
+      margin-right: 8px;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .section-description {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .card {
+      padding: 22px;
+      background: var(--panel);
+      border: 1px solid #30354b;
+      border-radius: 15px;
+    }
+
+    .card h3 {
+      color: var(--gold);
+      margin-top: 0;
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .book-cover {
+      min-height: 150px;
+      border-radius: 10px;
+      background: linear-gradient(145deg, #343653, #171a2d);
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      border: 1px solid #4b4560;
+    }
+
+    .notice {
+      border-right: 3px solid var(--gold);
+      padding: 15px 18px;
+      background: var(--panel);
+      color: var(--muted);
+      border-radius: 8px;
+    }
+
+    footer {
+      border-top: 1px solid #30354b;
+      margin-top: 35px;
+      padding: 25px 0;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container navbar">
+      <a class="logo" href="#home">نارویا</a>
+
+      <nav aria-label="منوی اصلی">
+        <a href="#home">خانه</a>
+        <a href="#books">رمان‌ها</a>
+        <a href="#genres">ژانرها</a>
+        <a href="#about">درباره ما</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="eyebrow">به دنیای نارویا خوش آمدید</div>
+        <h1>هر داستان، جهانی تازه</h1>
+        <p>
+          جایی برای کشف داستان‌های تازه، همراهی با نویسندگان
+          و سفر به دنیاهایی که در انتظار خوانده شدن هستند.
+        </p>
+
+        <a class="button" href="#books">کشف رمان‌ها</a>
+        <a class="button secondary" href="#about">آشنایی با نارویا</a>
+      </div>
+    </section>
+
+    <section class="container" id="books">
+      <h2 class="section-title">دنیای رمان‌ها</h2>
+      <p class="section-description">
+        داستان مورد علاقه‌ات را پیدا کن.
+      </p>
+
+      <div class="features">
+        <article class="card">
+          <div class="book-cover">رمان اول</div>
+          <h3>داستانی برای کشف</h3>
+          <p>معرفی یک داستان تازه در نارویا.</p>
+        </article>
+
+        <article class="card">
+          <div class="book-cover">رمان دوم</div>
+          <h3>سفری به ناشناخته‌ها</h3>
+          <p>جهانی تازه در میان واژه‌ها.</p>
+        </article>
+
+        <article class="card">
+          <div class="book-cover">رمان سوم</div>
+          <h3>آغاز یک ماجرا</h3>
+          <p>هر صفحه، دری به سوی اتفاقی تازه.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="genres">
+      <h2 class="section-title">ژانرهای داستانی</h2>
+
+      <div class="features">
+        <article class="card">
+          <h3>فانتزی</h3>
+          <p>جهان‌های خیالی و قدرت‌های شگفت‌انگیز.</p>
+        </article>
+
+        <article class="card">
+          <h3>تاریخی</h3>
+          <p>سفر به دوران‌ها و سرزمین‌های گذشته.</p>
+        </article>
+
+        <article class="card">
+          <h3>معمایی</h3>
+          <p>رازهایی که منتظر کشف شدن هستند.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="about">
+      <h2 class="section-title">درباره نارویا</h2>
+
+      <div class="notice">
+        نارویا با هدف فراهم کردن فضایی برای نویسندگان
+        و خوانندگان ساخته می‌شود. این نسخه، شروع پروژه است؛
+        امکانات حساب کاربری، انتشار رمان و مدیریت محتوا
+        در مراحل بعدی پیاده‌سازی خواهند شد.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © نارویا — دنیایی برای داستان‌ها
+    </div>
+  </footer>
+</body>
+</html>
